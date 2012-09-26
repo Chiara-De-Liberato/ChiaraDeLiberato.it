@@ -35,7 +35,7 @@ if(empty($cookie_lang)){
 	}
 }else{
 	if($browser_lang == "it" || "en" || "jp"){
-		include_once "./po/".$browser_lang.".php";
+		include_once "./po/".$cookie_lang.".php";
 	}else{
 		include_once "./po/en.php";
 	}
