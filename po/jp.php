@@ -22,11 +22,23 @@
  * 
 */
 
+/*
+ * OK: $lang = "L'amore";
+ * OK: $lang = "Maria / Laura";
+ * 
+ * BAD: $lang = "Maria \ Laura"; 
+ * SOLUTION: replece \ with double \\
+ * 
+ * BAD: $lang = "Oggi il "marinaio" è partito";
+ * SOLUTION: replece all " with \"
+ * 
+ */
 
-$lang1 = "";
-$lang2 = "";
-$lang3 = "";
-$lang4 = "";
+$lang0 = "jp-JP";
+$lang1 = "jp";
+$lang2 = "UTF-8";
+$lang3 = "Chiara De Liberato";
+$lang4 = "Feed RSS";
 $lang5 = "";
 $lang6 = "";
 $lang7 = "";
