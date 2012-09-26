@@ -30,7 +30,8 @@
  * SOLUTION: replece \ with double \\
  * 
  * BAD: $lang = "Oggi il "marinaio" è partito";
- * SOLUTION: replece all " with \"
+ * SOLUTION1: replece all " with \"
+ * SOLUTION2: replece all " with '
  * 
  */
 
