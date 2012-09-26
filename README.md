@@ -16,6 +16,6 @@ You can find us on this web source:
 
 WebSite: http://www.chiaradeliberato.it/
 
-Source: https://github.com/Chiara-De-Liberato/ChiaraDeLiberato.it
+Source: http://source.chiaradeliberato.it/ 
 
 IRC: chat.freenode.net at #ptkdev
