@@ -46,7 +46,7 @@
 	<meta name="robots" content="index,follow" />
 	<meta name="revisit-after" content="3 days" />
 	<meta name="rating" content="general" />
-	<meta name="language" content="it" />
+	<meta name="language" content="<?php echo $lang1; ?> " />
 	
 	<link rel="alternate" type="application/rss+xml" title="<?php echo $lang3; ?> - <?php echo $lang4; ?>" href="http://feeds.feedburner.com/chiaradeliberato" />
 	<link rel="shortcut icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.ico" />

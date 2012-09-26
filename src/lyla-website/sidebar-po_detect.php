@@ -24,24 +24,40 @@
 
 $browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
+if(empty($_GET["lang"])){
+	$flag = 0;
+}else{
+	$flag = 1;
+	$click_lang = $_GET["lang"];
+}
+
 if(empty($_COOKIE['chiaradeliberato_lang']))
 	$cookie_lang = "";
 else
 	$cookie_lang = $_COOKIE['chiaradeliberato_lang'];
 
-if(empty($cookie_lang)){
-	if($browser_lang == "it" || "en" || "jp"){
+if(empty($cookie_lang) && $flag == 0){
+	if($browser_lang == "it" || $browser_lang == "en" || $browser_lang == "jp"){
 		setcookie("chiaradeliberato_lang", $browser_lang, time()+604800);
 		include_once "./po/".$browser_lang.".php";
 	}else{
 		include_once "./po/en.php";
 	}
-}else{
-	if($cookie_lang == "it" || "en" || "jp"){
+}else if($flag == 0){
+	if($cookie_lang == "it" || $cookie_lang == "en" || $cookie_lang == "jp"){
 		include_once "./po/".$cookie_lang.".php";
 	}else{
 		include_once "./po/en.php";
 	}
+}else if($flag == 1){
+	if($click_lang == "it" || $click_lang == "en" || $click_lang == "jp"){
+		setcookie("chiaradeliberato_lang", $click_lang, time()+604800);
+		include_once "./po/".$click_lang.".php";
+	}else{
+		include_once "./po/en.php";
+	}
+}else{
+	include_once "./po/en.php";
 }
 	
 ?>
