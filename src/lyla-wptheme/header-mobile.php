@@ -26,7 +26,7 @@
 <html dir="ltr" lang="<?php echo $lang0; ?>"> 
 <head>
 	<meta charset="<?php echo $lang2; ?>" />
-	<title><?php echo $lang3; ?></title>
+	<title><?php wp_title(''); ?> <?php if(wp_title(' ', false)) { echo '&laquo;'; } ?> <?php bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<meta name="generator" content="Geany IDE" />
 	
@@ -49,15 +49,15 @@
 	<meta name="language" content="<?php echo $lang1; ?> " />
 	
 	<link rel="alternate" type="application/rss+xml" title="<?php echo $lang3; ?> - <?php echo $lang4; ?>" href="http://feeds.feedburner.com/chiaradeliberato" />
-	<link rel="shortcut icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.ico" />
-	<link rel="icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.png" type="image/png" />
-	<link rel="icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.ico" type="image/ico" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/png" />
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/ico" />
 	
-	<link rel="stylesheet" type="text/css" href="./css/mobile/layout.css" />
-	<link rel="stylesheet" type="text/css" href="./css/mobile/header.css" />
-	<link rel="stylesheet" type="text/css" href="./css/mobile/body.css" />
-	<link rel="stylesheet" type="text/css" href="./css/mobile/footer.css" />
-	<link rel="stylesheet" type="text/css" href="./css/mobile/link.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/layout.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/header.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/body.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/footer.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/link.css" />
 </head>
 
 <body>

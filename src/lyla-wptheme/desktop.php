@@ -21,18 +21,14 @@
  * 	Source Code: http://source.chiaradeliberato.it/ 
  * 
 */
-
-	include_once "sidebar-mobile_detect.php"; 
-	include_once "sidebar-po_detect.php"; 
-	$detect = new Mobile_Detect();
-	$mobi = $detect->isMobile();
-	if(!$mobi){
-		include_once "header.php"; 
-		include_once "desktop.php"; 
-		include_once "footer.php"; 
-	}else{
-		include_once "header-mobile.php"; 
-		include_once "mobile.php"; 
-		include_once "footer-mobile.php";
-	}
 ?>
+
+<div id="content">
+	<div id="logo"></div>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php the_content(); ?>
+		<?php if(!is_page()) { ?>
+			<b>Tags:</b> <?php the_tags(""," &bullet; "," "); ?><br /><br />
+		<?php } ?>
+	<?php endwhile; else: endif; ?>	
+</div>

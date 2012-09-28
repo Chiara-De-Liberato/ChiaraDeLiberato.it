@@ -1,3 +1,4 @@
+<?php 
 /*
  * ChiaraDeLiberato (Wordpress Theme)
  *   Copyright (C) 2012  Chiara De Liberato
@@ -20,3 +21,24 @@
  * 	Source Code: http://source.chiaradeliberato.it/ 
  * 
 */
+
+	if(empty($_GET['page']))
+		$page = "";
+	else
+		$page = $_GET['page'];
+
+	$dir = "./";
+	include_once "sidebar-mobile_detect.php"; 
+	include_once "sidebar-po_detect.php"; 
+	$detect = new Mobile_Detect();
+	$mobi = $detect->isMobile();
+	if(!$mobi){
+		include_once "header.php"; 
+		include_once "desktop.php"; 
+		include_once "footer.php"; 
+	}else{
+		include_once "header-mobile.php"; 
+		include_once "mobile.php"; 
+		include_once "footer-mobile.php";
+	}
+?>

@@ -26,7 +26,7 @@
 <html dir="ltr" lang="<?php echo $lang0; ?>"> 
 <head> 
 	<meta charset="<?php echo $lang2; ?>" />
-	<title><?php echo $lang3; ?></title>
+	<title><?php wp_title(''); ?> <?php if(wp_title(' ', false)) { echo '&laquo;'; } ?> <?php bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<meta name="generator" content="Geany IDE" />
 	
@@ -49,25 +49,30 @@
 	<meta name="language" content="<?php echo $lang1; ?> " />
 	
 	<link rel="alternate" type="application/rss+xml" title="<?php echo $lang3; ?> - <?php echo $lang4; ?>" href="http://feeds.feedburner.com/chiaradeliberato" />
-	<link rel="shortcut icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.ico" />
-	<link rel="icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.png" type="image/png" />
-	<link rel="icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/favicon.ico" type="image/ico" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/png" />
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/ico" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	
-	<link rel="stylesheet" type="text/css" href="./css/desktop/layout.css" />
-	<link rel="stylesheet" type="text/css" href="./css/desktop/header.css" />
-	<link rel="stylesheet" type="text/css" href="./css/desktop/body.css" />
-	<link rel="stylesheet" type="text/css" href="./css/desktop/footer.css" />
-	<link rel="stylesheet" type="text/css" href="./css/desktop/link.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/layout.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/header.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/body.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/footer.css" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/link.css" />
 	
-	<link href="./plugin/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen" /> 
+	<link href="<?php bloginfo('template_url'); ?>/plugin/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen" /> 
 	
-	<script src="./plugin/lightbox/js/prototype.js" type="text/javascript"></script> 
-	<script src="./plugin/lightbox/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script> 
-	<script src="./plugin/lightbox/js/lightbox.js" type="text/javascript"></script>
+	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/prototype.js" type="text/javascript"></script> 
+	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script> 
+	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/lightbox.js" type="text/javascript"></script>
 	<!--[if lt IE 7.]>
-	<script defer type="text/javascript" src="./js/pngfix.js"></script>
+	<script defer type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/pngfix.js"></script>
 	<![endif]-->
 </head>
 
 <body>
+	
+<div id="container">
+	<div id="header">
+		<div class="flags"></div>
+	</div>

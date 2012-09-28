@@ -1,3 +1,4 @@
+<?php 
 /*
  * ChiaraDeLiberato (Wordpress Theme)
  *   Copyright (C) 2012  Chiara De Liberato
@@ -20,18 +21,13 @@
  * 	Source Code: http://source.chiaradeliberato.it/ 
  * 
 */
+?>
 
-#container{
-	width: 890px;
-	margin: 0 auto;
-}
+	<div id="footer">
+		<div class="credits"></div>
+	</div>
 
-#content{
-	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
-	font-size: 16px;
-	color: #000000;
-	width: 890px;
-	float: left;
-	text-align: justify;
-	min-height: 600px;
-}
+</div>
+
+</body>
+</html>

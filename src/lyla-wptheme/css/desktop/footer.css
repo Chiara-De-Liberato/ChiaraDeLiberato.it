@@ -21,3 +21,9 @@
  * 
 */
 
+#footer{
+	background-image: url("./../../img/desktop/footer_line.png"); 
+	background-repeat: repeat-x; 
+	height: 37px;
+	clear: both;
+}

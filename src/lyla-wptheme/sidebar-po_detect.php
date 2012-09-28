@@ -39,25 +39,25 @@ else
 if(empty($cookie_lang) && $flag == 0){
 	if($browser_lang == "it" || $browser_lang == "en" || $browser_lang == "jp"){
 		setcookie("chiaradeliberato_lang", $browser_lang, time()+604800);
-		include_once "./po/".$browser_lang.".php";
+		include_once "po/".$browser_lang.".php";
 	}else{
-		include_once "./po/en.php";
+		include_once "po/en.php";
 	}
 }else if($flag == 0){
 	if($cookie_lang == "it" || $cookie_lang == "en" || $cookie_lang == "jp"){
-		include_once "./po/".$cookie_lang.".php";
+		include_once "po/".$cookie_lang.".php";
 	}else{
-		include_once "./po/en.php";
+		include_once "po/en.php";
 	}
 }else if($flag == 1){
 	if($click_lang == "it" || $click_lang == "en" || $click_lang == "jp"){
 		setcookie("chiaradeliberato_lang", $click_lang, time()+604800);
-		include_once "./po/".$click_lang.".php";
+		include_once "po/".$click_lang.".php";
 	}else{
-		include_once "./po/en.php";
+		include_once "po/en.php";
 	}
 }else{
-	include_once "./po/en.php";
+	include_once "po/en.php";
 }
 	
 ?>

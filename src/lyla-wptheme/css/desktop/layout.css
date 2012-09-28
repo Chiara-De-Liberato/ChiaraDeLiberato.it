@@ -25,6 +25,8 @@ html,body{
 	min-width: 980px;
 	margin: 0 auto;
 	text-align: left;
+	background-image: url("./../../img/desktop/bg.png"); 
+	background-repeat: repeat; 
 }
 
 img {
