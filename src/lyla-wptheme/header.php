@@ -60,11 +60,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/footer.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/desktop/link.css" />
 	
-	<link href="<?php bloginfo('template_url'); ?>/plugin/lightbox/lightbox.css" rel="stylesheet" type="text/css" media="screen" /> 
-	
-	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/prototype.js" type="text/javascript"></script> 
-	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script> 
-	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/js/lightbox.js" type="text/javascript"></script>
+	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/jquery-1.7.2.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/plugin/lightbox/lightbox.js"></script>
+	<link href="<?php bloginfo('template_url'); ?>/plugin/lightbox/lightbox.css" rel="stylesheet" />
 	<!--[if lt IE 7.]>
 	<script defer type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/pngfix.js"></script>
 	<![endif]-->
