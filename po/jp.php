@@ -37,13 +37,12 @@
 
 $lang0 = "jp-JP";
 $lang1 = "jp";
-$lang2 = "UTF-8";
 $lang3 = "Chiara De Liberato";
 $lang4 = "Feed RSS";
-$lang5 = "";
-$lang6 = "";
-$lang7 = "";
-$lang8 = "";
+$lang5 = "Copyright ~ 2012/2013";
+$lang6 = "Errore 404";
+$lang7 = "La pagina è stata cancellata o è stata spostata...";
+$lang8 = "Copyright ~ 2012/2013";
 $lang9 = "";
 $lang10 = "";
 $lang11 = "";
@@ -56,4 +55,12 @@ $lang17 = "";
 $lang18 = "";
 $lang19 = "";
 $lang20 = "";
+
+$url1 = "/portfolio-en/";
+$url2 = "/services/";
+$url4 = "/contacts/";
+$url1txt = "Portfolio";
+$url2txt = "Services";
+$url3txt = "Blog";
+$url4txt = "Contacts";
 ?>

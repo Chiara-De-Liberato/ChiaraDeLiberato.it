@@ -40,7 +40,7 @@
 	<meta name="author-phone_wind" content="+39 3281759093" />
 	
 	<meta name="copyright" content="GNU Affero General Public License" />
-	<meta name="source-code" content="https://source.chiaradeliberato.it/" />
+	<meta name="source-code" content="https://source.<?php echo $_SERVER["HTTP_HOST"]; ?>/" />
 	
 	<meta name="distribution" content="global" />
 	<meta name="robots" content="index,follow" />
@@ -49,9 +49,9 @@
 	<meta name="language" content="<?php echo $lang1; ?> " />
 	
 	<link rel="alternate" type="application/rss+xml" title="<?php echo $lang3; ?> - <?php echo $lang4; ?>" href="http://feeds.feedburner.com/chiaradeliberato" />
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
-	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/png" />
-	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/ico" />
+	<link rel="shortcut icon" href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/favicon.ico" />
+	<link rel="icon" href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/favicon.png" type="image/png" />
+	<link rel="icon" href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/favicon.ico" type="image/ico" />
 	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/layout.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/mobile/header.css" />
@@ -61,3 +61,36 @@
 </head>
 
 <body>
+
+<div id="container">
+	<div id="header"></div>
+		<div id="header_content">
+			<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/"><img id="logo" src="<?php bloginfo('template_url'); ?>/img/desktop/logo.png" /></a>
+			<?php if($lang1 == "it"){ ?>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_enable"></div></a>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_disable"></div></a>
+			<?php }else{ ?>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_disable"></div></a>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_enable"></div></a>
+			<?php } ?>
+			
+			<div class="clear"></div>
+			
+			<div id="social">
+				<a target="_blank" href="https://www.facebook.com/chiara.deliberato"><img class="space-icon-first" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/facebook-icon.png" /></a>
+				<a target="_blank" href="https://twitter.com/chiara_lyla"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/twitter-icon.png" /></a>
+				<a target="_blank" href="https://plus.google.com/115347192402186810903/posts"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/gplus-icon.png" /></a>
+				<a target="_blank" href="http://it.linkedin.com/in/chiaradeliberato"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/linkedin-icon.png" /></a>
+				<a target="_blank" href="skype:hey_lyla84?call"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/skype-icon.png" /></a>
+				<a target="_blank" href="https://github.com/Chiara-De-Liberato"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/github-icon.png" /></a>
+				<a target="_blank" href="http://feeds.feedburner.com/chiaradeliberato"><img class="space-icon" src="<?php bloginfo('template_url'); ?>/img/desktop/icon/rss-icon.png" /></a>
+			</div>
+			<div class="clear"></div>
+			<div id="menu">
+				| <a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url1; ?>"><?php echo $url1txt; ?></a> |	
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url2; ?>/"><?php echo $url2txt; ?></a> |
+				<a href="http://blog.chiaradeliberato.it/"><?php echo $url3txt; ?></a> |
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url4; ?>"><?php echo $url4txt; ?></a> |
+			</div>
+	</div>
+<div class="clear"></div>

@@ -24,11 +24,24 @@
 ?>
 
 <div id="content">
-	<div id="logo"></div>
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<?php the_content(); ?>
-		<?php if(!is_page()) { ?>
-			<b>Tags:</b> <?php the_tags(""," &bullet; "," "); ?><br /><br />
-		<?php } ?>
-	<?php endwhile; else: endif; ?>	
+	
+	<?php 
+	if(is_home() && $lang1 == "en"){
+		$pageid = "7";
+		$page = get_page($pageid);
+		$title = $page->post_title;
+		$content = $page->post_content;
+		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
+	}else if(is_home() && $lang1 == "it"){
+		$pageid = "2";
+		$page = get_page($pageid);
+		$title = $page->post_title;
+		$content = $page->post_content;
+		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
+	}else{
+	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<div class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
+			<?php the_content(); ?>
+	<?php endwhile; else: endif;  } ?>
+	
 </div>

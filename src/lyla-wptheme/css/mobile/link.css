@@ -26,13 +26,13 @@ a:link, a:visited, a:hover, a:active, a:focus{
 }
 
 a:link:hover, a:visited:hover{ 
-  text-decoration:none;
+  text-decoration:underline;
 }
 a:active{ 
   text-decoration:none;
 }
 a:focus{ 
-  text-decoration:none;
+  text-decoration:underline;
 }
 a:visited{ 
   text-decoration:none;
@@ -41,48 +41,3 @@ a:link{
   text-decoration:none;
 }
 
-a.menu:link, a.menu:visited, a.menu:hover, a.menu:active, a.menu:focus{
-	font-family: Arial,"Verdana"; 
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-}
-
-a.menu:link:hover, a.menu:visited:hover{ 
-  text-decoration:underline;
-}
-a.menu:active{ 
-  text-decoration:none;
-}
-a.menu:focus{ 
-  text-decoration:underline;
-}
-a.menu:visited{ 
-  text-decoration:none;
-}
-a.menu:link{ 
-  text-decoration:none;
-}
-
-a.title_post:link, a.title_post:visited, a.title_post:hover, a.title_post:active, a.title_post:focus{
-	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
-	font-size: 18px;
-	font-weight: bold;
-	color: #2E7FBE;
-}
-
-a.title_post:link:hover, a.title_post:visited:hover{ 
-  text-decoration:underline;
-}
-a.title_post:active{ 
-  text-decoration:none;
-}
-a.title_post:focus{ 
-  text-decoration:underline;
-}
-a.title_post:visited{ 
-  text-decoration:none;
-}
-a.title_post:link{ 
-  text-decoration:none;
-}
