@@ -41,3 +41,24 @@ a:link{
   text-decoration:none;
 }
 
+a.footer:link, a.footer:visited, a.footer:hover, a.footer:active, a.footer:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	color: #5A5A5A;
+}
+
+a.footer:link:hover, a.footer:visited:hover{ 
+  text-decoration:underline;
+}
+a.footer:active{ 
+  text-decoration:none;
+}
+a.footer:focus{ 
+  text-decoration:underline;
+}
+a.footer:visited{ 
+  text-decoration:none;
+}
+a.footer:link{ 
+  text-decoration:none;
+}
+

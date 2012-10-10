@@ -23,6 +23,8 @@
 
 html,body{
 	min-width: 980px;
+	height:100%;
+	min-height:100%;
 	margin: 0 auto;
 	text-align: left;
 	background-color: #F6F6F6;

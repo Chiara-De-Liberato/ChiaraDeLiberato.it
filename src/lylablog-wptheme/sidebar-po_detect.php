@@ -38,7 +38,8 @@ else
 
 if(empty($cookie_lang) && $flag == 0){
 	if($browser_lang == "it" || $browser_lang == "en" || $browser_lang == "jp"){
-		setcookie("chiaradeliberato_lang", $browser_lang, time()+604800, "/");
+		setcookie("chiaradeliberato_lang", $browser_lang, time()+604800, "/","chiaradeliberato.it");
+		setcookie("chiaradeliberato_lang", $browser_lang, time()+604800, "/","blog.chiaradeliberato.it");
 		include_once "po/".$browser_lang.".php";
 	}else{
 		include_once "po/en.php";
@@ -51,7 +52,8 @@ if(empty($cookie_lang) && $flag == 0){
 	}
 }else if($flag == 1){
 	if($click_lang == "it" || $click_lang == "en" || $click_lang == "jp"){
-		setcookie("chiaradeliberato_lang", $click_lang, time()+604800, "/");
+		setcookie("chiaradeliberato_lang", $click_lang, time()+604800, "/","chiaradeliberato.it");
+		setcookie("chiaradeliberato_lang", $click_lang, time()+604800, "/","blog.chiaradeliberato.it");
 		include_once "po/".$click_lang.".php";
 	}else{
 		include_once "po/en.php";

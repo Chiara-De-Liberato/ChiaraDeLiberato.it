@@ -69,13 +69,26 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	
 <div id="container">
 	<div id="header"></div>
 		<div id="header_content">
 			<a href="http://www.chiaradeliberato.it/"><img id="logo" src="<?php bloginfo('template_url'); ?>/img/desktop/logo.png" /></a>
-				<a href="#" onClick="alert('My blog isn\'t available in English');"><div class="flags_en_enable"></div></a>
-				<a href="#"><div class="flags_it_disable"></div></a>
+			<?php if($lang1 == "it"){ ?>
+				<a href="?lang=en"><div class="flags_en_enable"></div></a>
+				<a href="?lang=it"><div class="flags_it_disable"></div></a>
+			<?php }else{ ?>
+				<a href="?lang=en"><div class="flags_en_disable"></div></a>
+				<a href="?lang=it"><div class="flags_it_enable"></div></a>
+			<?php } ?>
 			<div class="clear"></div>
 			
 			<div id="social">
@@ -92,8 +105,12 @@
 				<a href="http://www.chiaradeliberato.it/contacts/"><div class="button_disable"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
 				<a href="http://blog.chiaradeliberato.it/"><div class="button_enable"><div class="space-top"><?php echo $url3txt; ?></div></div></a>
 				<a href="http://www.chiaradeliberato.it/services/"><div class="button_disable"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
-				<a href="http://www.chiaradeliberato.it/portfolio/"><div class="button_disable"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	<br />				
-				
+				<a href="http://www.chiaradeliberato.it/portfolio/"><div class="button_disable"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	
+				<div class="clear"></div>
+				<br />
+				<?php if($lang1 == "en"){ ?>		
+					<img class="error_img" src="<?php bloginfo('template_url'); ?>/img/desktop/attention.png" /><div class="error"><?php echo $lang9; ?></div>	
+				<?php } ?>
 			</div>
 			<div class="clear"></div>
 		</div>

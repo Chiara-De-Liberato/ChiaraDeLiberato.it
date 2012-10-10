@@ -61,6 +61,14 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="container">
 	<div id="header"></div>
@@ -92,5 +100,6 @@
 				<a href="http://blog.chiaradeliberato.it/"><?php echo $url3txt; ?></a> |
 				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/contacts/"><?php echo $url4txt; ?></a> |
 			</div>
+			
 	</div>
 <div class="clear"></div>

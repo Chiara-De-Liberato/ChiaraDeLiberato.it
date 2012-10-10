@@ -22,26 +22,24 @@
 */
 
 #footer{
-	background-image: url("./../../img/desktop/footer.png"); 
-	background-repeat: repeat-x; 
-	height: 43px;
 	text-align: center;
 	width: 100%;
-	margin-top: 30px;
+	height: 50px;
+	clear: both;
+	
 }
 
 #footer_credits{
-	background-image: url("./../../img/desktop/footer_center.png"); 
-	background-repeat: no-repeat; 
-	width: 573px;
+	border-top:;
+	width: 980px;
 	height: 29px;
-	font-family: "Trebuchet MS", TrebuchetBold_Import, "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
-	font-size: 14px;
-	color: #000000;
+	font-family: "Verdana","Sans Serif","OpenSymbol"; 
+	font-size: 11px;
+	color: #5A5A5A;
 	text-align: center;
-	font-weight: bold;
 	margin: 0 auto;
-	padding-top: 14px;
+	padding-top: 4px;
+	border-top: 1px solid #3866AB;
 }
 
 

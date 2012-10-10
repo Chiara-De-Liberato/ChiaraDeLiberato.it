@@ -23,6 +23,10 @@
 
 #container{
 	width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
 }
 
 #content{
@@ -32,7 +36,6 @@
 	font-size: 15px;
 	color: #000000;
 	text-align: justify;
-	min-height: 530px;
 	padding-top: 10px;
 }
 
@@ -41,4 +44,45 @@
 	font-size: 22px;
 	color: #000000;
 	text-align: justify;
+}
+
+.comments{
+	width: 980px;
+}
+
+#disqus_thread{
+	width: 980px;
+}
+
+
+.content_small{
+	font-size: 11px;
+}
+
+.content_tags{
+	font-family: "Verdana","Sans Serif","OpenSymbol"; 
+	font-size: 11px;
+}
+
+.author{
+	text-align: right;
+}
+
+.width{ 
+	width: 100%; 
+}
+
+.iframe{
+	width: 550px; 
+	height: 300px; 
+	overflow: hidden;
+	border: 0px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
 }

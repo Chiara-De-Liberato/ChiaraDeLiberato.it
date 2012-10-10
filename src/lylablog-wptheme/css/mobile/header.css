@@ -104,3 +104,15 @@
 	font-weight: bold;
 	margin-top: 10px;
 }
+
+.error_img{
+	float: left;
+	padding-right: 3px;
+	padding-left: 2px;
+}
+
+.error{
+	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 16px;
+	color: #000000;
+}

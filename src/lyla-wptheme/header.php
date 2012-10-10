@@ -69,6 +69,14 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	
 <div id="container">
 	<div id="header"></div>
@@ -122,7 +130,7 @@
 				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/contacts/"><div class="button_<?php echo $menu4; ?>"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
 				<a href="http://blog.chiaradeliberato.it/"><div class="button_disable"><div class="space-top"><?php echo $url3txt; ?></div></div></a>
 				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/services/"><div class="button_<?php echo $menu2; ?>"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/portfolio/"><div class="button_<?php echo $menu1; ?>"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/portfolio/"><div class="button_<?php echo $menu1; ?>"><div class="space-top"><?php echo $url1txt; ?></div></div></a><br /><br />
 			</div>
 			<div class="clear"></div>
 		</div>

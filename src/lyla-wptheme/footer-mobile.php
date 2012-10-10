@@ -23,13 +23,14 @@
 */
 ?>
 
-	<div class="clear"></div>
+</div>
 	
 	<div id="footer">
-		<div id="footer_credits"><?php echo $lang8; ?></div>
+		<div id="footer_credits">
+			<div class="left"><?php echo $lang5; ?> </div>
+			<div class="right">[<a class="footer" href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/sitemap.xml">SiteMap</a>]</div>
+		</div>
 	</div>
-
-</div>
 
 </body>
 </html>

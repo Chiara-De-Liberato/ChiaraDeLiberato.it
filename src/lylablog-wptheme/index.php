@@ -29,8 +29,7 @@
 
 	$dir = "./";
 	include_once "sidebar-mobile_detect.php"; 
-	//include_once "sidebar-po_detect.php"; 
-	include_once "po/it.php";
+	include_once "sidebar-po_detect.php"; 
 	$detect = new Mobile_Detect();
 	$mobi = $detect->isMobile();
 	if(!$mobi){

@@ -41,3 +41,67 @@ a:link{
   text-decoration:none;
 }
 
+a.author:link, a.author:visited, a.author:hover, a.author:active, a.author:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	font-weight: bold;
+	color: #5A5A5A;
+}
+
+a.author:link:hover, a.author:visited:hover{ 
+  text-decoration:underline;
+}
+a.author:active{ 
+  text-decoration:none;
+}
+a.author:focus{ 
+  text-decoration:underline;
+}
+a.author:visited{ 
+  text-decoration:none;
+}
+a.author:link{ 
+  text-decoration:none;
+}
+
+a.comments-link:link, a.comments-link:visited, a.comments-link:hover, a.comments-link:active, a.comments-link:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	font-weight: bold;
+	color: #5A5A5A;
+}
+
+a.comments-link:link:hover, a.comments-link:visited:hover{ 
+  text-decoration:underline;
+}
+a.comments-link:active{ 
+  text-decoration:none;
+}
+a.comments-link:focus{ 
+  text-decoration:underline;
+}
+a.comments-link:visited{ 
+  text-decoration:none;
+}
+a.comments-link:link{ 
+  text-decoration:none;
+}
+
+a.footer:link, a.footer:visited, a.footer:hover, a.footer:active, a.footer:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	color: #5A5A5A;
+}
+
+a.footer:link:hover, a.footer:visited:hover{ 
+  text-decoration:underline;
+}
+a.footer:active{ 
+  text-decoration:none;
+}
+a.footer:focus{ 
+  text-decoration:underline;
+}
+a.footer:visited{ 
+  text-decoration:none;
+}
+a.footer:link{ 
+  text-decoration:none;
+}

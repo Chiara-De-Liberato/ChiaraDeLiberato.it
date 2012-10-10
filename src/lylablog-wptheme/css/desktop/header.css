@@ -161,3 +161,16 @@
 .space-top{
 	padding-top: 4px;
 }
+
+.error_img{
+	float: left;
+	padding-right: 5px;
+	padding-left: 8px;
+}
+
+.error{
+	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 16px;
+	color: #000000;
+	text-align: justify;
+}
