@@ -24,6 +24,5 @@
 ?>
 
 <div id="content">
-	<div class="post-title"><a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/"><?php echo $lang7; ?></a></div>
-	<?php echo $lang8; ?>
+	<div class="post-title"><a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>"><?php echo $lang6; ?></a></div><?php echo $lang7; ?>
 </div>

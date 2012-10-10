@@ -51,6 +51,9 @@
 	background: url('./../../img/desktop/flag_enable-it.png') bottom;
 	float: right;
 }
+.flags_it_enable:hover {
+	background-position: 0 0;
+}
 
 .flags_it_disable {
 	margin-top: 7px;
@@ -60,6 +63,10 @@
 	background: url('./../../img/desktop/flag_disable-it.png') bottom;
 	float: right;
 }
+.flags_it_disable:hover {
+	background-position: 0 0;
+}
+
 
 .flags_en_enable {
 	margin-top: 7px;
@@ -69,6 +76,9 @@
 	background: url('./../../img/desktop/flag_enable-en.png') bottom;
 	float: right;
 }
+.flags_en_enable:hover {
+	background-position: 0 0;
+}
 
 .flags_en_disable {
 	margin-top: 7px;
@@ -77,6 +87,9 @@
 	height: 30px; 
 	background: url('./../../img/desktop/flag_disable-en.png') bottom;
 	float: right;
+}
+.flags_en_disable:hover {
+	background-position: 0 0;
 }
 
 

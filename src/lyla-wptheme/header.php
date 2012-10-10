@@ -75,11 +75,11 @@
 		<div id="header_content">
 			<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/"><img id="logo" src="<?php bloginfo('template_url'); ?>/img/desktop/logo.png" /></a>
 			<?php if($lang1 == "it"){ ?>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_enable"></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_disable"></div></a>
+				<a href="?lang=en"><div class="flags_en_enable"></div></a>
+				<a href="?lang=it"><div class="flags_it_disable"></div></a>
 			<?php }else{ ?>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_disable"></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_enable"></div></a>
+				<a href="?lang=en"><div class="flags_en_disable"></div></a>
+				<a href="?lang=it"><div class="flags_it_enable"></div></a>
 			<?php } ?>
 			<div class="clear"></div>
 			
@@ -94,22 +94,17 @@
 			</div>
 			
 			<?php
-			if($_SERVER['REQUEST_URI'] == $url1){
+			if(is_page(20) || is_page(11)){
 				$menu1 = "enable";
 				$menu2 = "disable";
 				$menu3 = "disable";
 				$menu4 = "disable";
-			}else if($_SERVER['REQUEST_URI'] == $url2){
+			}else if(is_page(21) || is_page(13)){
 				$menu1 = "disable";
 				$menu2 = "enable";
 				$menu3 = "disable";
 				$menu4 = "disable";
-			}else if($_SERVER['REQUEST_URI'] == $url3){
-				$menu1 = "disable";
-				$menu2 = "disable";
-				$menu3 = "enable";
-				$menu4 = "disable";
-			}else if($_SERVER['REQUEST_URI'] == $url4){
+			}else if(is_page(22) || is_page(15)){
 				$menu1 = "disable";
 				$menu2 = "disable";
 				$menu3 = "disable";
@@ -124,10 +119,10 @@
 			?>
 			
 			<div id="menu">
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url4; ?>"><div class="button_<?php echo $menu4; ?>"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
-				<a href="http://blog.chiaradeliberato.it/"><div class="button_<?php echo $menu3; ?>"><div class="space-top"><?php echo $url3txt; ?></div></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url2; ?>"><div class="button_<?php echo $menu2; ?>"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url1; ?>"><div class="button_<?php echo $menu1; ?>"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/contacts/"><div class="button_<?php echo $menu4; ?>"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
+				<a href="http://blog.chiaradeliberato.it/"><div class="button_disable"><div class="space-top"><?php echo $url3txt; ?></div></div></a>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/services/"><div class="button_<?php echo $menu2; ?>"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/portfolio/"><div class="button_<?php echo $menu1; ?>"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	
 			</div>
 			<div class="clear"></div>
 		</div>

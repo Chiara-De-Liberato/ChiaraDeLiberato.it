@@ -67,11 +67,11 @@
 		<div id="header_content">
 			<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/"><img id="logo" src="<?php bloginfo('template_url'); ?>/img/desktop/logo.png" /></a>
 			<?php if($lang1 == "it"){ ?>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_enable"></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_disable"></div></a>
+				<a href="?lang=en"><div class="flags_en_enable"></div></a>
+				<a href="?lang=it"><div class="flags_it_disable"></div></a>
 			<?php }else{ ?>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=en"><div class="flags_en_disable"></div></a>
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/?lang=it"><div class="flags_it_enable"></div></a>
+				<a href="?lang=en"><div class="flags_en_disable"></div></a>
+				<a href="?lang=it"><div class="flags_it_enable"></div></a>
 			<?php } ?>
 			
 			<div class="clear"></div>
@@ -87,10 +87,10 @@
 			</div>
 			<div class="clear"></div>
 			<div id="menu">
-				| <a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url1; ?>"><?php echo $url1txt; ?></a> |	
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url2; ?>/"><?php echo $url2txt; ?></a> |
+				| <a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/portfolio/"><?php echo $url1txt; ?></a> |	
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/services/"><?php echo $url2txt; ?></a> |
 				<a href="http://blog.chiaradeliberato.it/"><?php echo $url3txt; ?></a> |
-				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; echo $url4; ?>"><?php echo $url4txt; ?></a> |
+				<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>/contacts/"><?php echo $url4txt; ?></a> |
 			</div>
 	</div>
 <div class="clear"></div>

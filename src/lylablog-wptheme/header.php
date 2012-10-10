@@ -74,8 +74,8 @@
 	<div id="header"></div>
 		<div id="header_content">
 			<a href="http://www.chiaradeliberato.it/"><img id="logo" src="<?php bloginfo('template_url'); ?>/img/desktop/logo.png" /></a>
-				<div class="flags_en_enable"></div>
-				<div class="flags_it_disable"></div>
+				<a href="#" onClick="alert('My blog isn\'t available in English');"><div class="flags_en_enable"></div></a>
+				<a href="#"><div class="flags_it_disable"></div></a>
 			<div class="clear"></div>
 			
 			<div id="social">
@@ -89,10 +89,11 @@
 			</div>
 			
 			<div id="menu">
-				<a href="http://www.chiaradeliberato.it<?php echo $url4; ?>"><div class="button_disable"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
+				<a href="http://www.chiaradeliberato.it/contacts/"><div class="button_disable"><div class="space-top"><?php echo $url4txt; ?></div></div></a>		
 				<a href="http://blog.chiaradeliberato.it/"><div class="button_enable"><div class="space-top"><?php echo $url3txt; ?></div></div></a>
-				<a href="http://www.chiaradeliberato.it<?php echo $url2; ?>"><div class="button_disable"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
-				<a href="http://www.chiaradeliberato.it<?php echo $url1; ?>"><div class="button_disable"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	
+				<a href="http://www.chiaradeliberato.it/services/"><div class="button_disable"><div class="space-top"><?php echo $url2txt; ?></div></div></a>
+				<a href="http://www.chiaradeliberato.it/portfolio/"><div class="button_disable"><div class="space-top"><?php echo $url1txt; ?></div></div></a>	<br />				
+				
 			</div>
 			<div class="clear"></div>
 		</div>

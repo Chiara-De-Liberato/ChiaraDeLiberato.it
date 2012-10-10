@@ -38,6 +38,33 @@
 		$title = $page->post_title;
 		$content = $page->post_content;
 		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
+	}else if(is_page(22) || is_page(15)){
+		if($lang1 == "en")
+			$pageid = "22";
+		else
+			$pageid = "15";
+		$page = get_page($pageid);
+		$title = $page->post_title;
+		$content = $page->post_content;
+		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
+	}else if(is_page(20) || is_page(11)){
+		if($lang1 == "en")
+			$pageid = "20";
+		else
+			$pageid = "11";
+		$page = get_page($pageid);
+		$title = $page->post_title;
+		$content = $page->post_content;
+		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
+	}else if(is_page(21) || is_page(13)){
+		if($lang1 == "en")
+			$pageid = "21";
+		else
+			$pageid = "13";
+		$page = get_page($pageid);
+		$title = $page->post_title;
+		$content = $page->post_content;
+		echo "<div class='post-title'><a href='http://".$_SERVER['HTTP_HOST']."/'>$title</a></div>$content";
 	}else{
 	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>

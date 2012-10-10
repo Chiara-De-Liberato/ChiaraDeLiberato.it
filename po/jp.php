@@ -56,9 +56,6 @@ $lang18 = "";
 $lang19 = "";
 $lang20 = "";
 
-$url1 = "/portfolio-en/";
-$url2 = "/services/";
-$url4 = "/contacts/";
 $url1txt = "Portfolio";
 $url2txt = "Services";
 $url3txt = "Blog";
