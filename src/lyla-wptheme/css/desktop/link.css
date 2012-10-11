@@ -1,0 +1,108 @@
+/*
+ * ChiaraDeLiberato (Wordpress Theme)
+ *   Copyright (C) 2012  Chiara De Liberato
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *  
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * 
+ *	WebSite: http://www.chiaradeliberato.it/
+ * 	Source Code: http://source.chiaradeliberato.it/ 
+ * 
+*/
+
+a:link, a:visited, a:hover, a:active, a:focus{
+  color: #000000;
+}
+
+a:link:hover, a:visited:hover{ 
+  text-decoration:underline;
+}
+a:active{ 
+  text-decoration:none;
+}
+a:focus{ 
+  text-decoration:underline;
+}
+a:visited{ 
+  text-decoration:none;
+}
+a:link{ 
+  text-decoration:none;
+}
+
+a.author:link, a.author:visited, a.author:hover, a.author:active, a.author:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	font-weight: bold;
+	color: #5A5A5A;
+}
+
+a.author:link:hover, a.author:visited:hover{ 
+  text-decoration:underline;
+}
+a.author:active{ 
+  text-decoration:none;
+}
+a.author:focus{ 
+  text-decoration:underline;
+}
+a.author:visited{ 
+  text-decoration:none;
+}
+a.author:link{ 
+  text-decoration:none;
+}
+
+a.comments-link:link, a.comments-link:visited, a.comments-link:hover, a.comments-link:active, a.comments-link:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	font-weight: bold;
+	color: #5A5A5A;
+}
+
+a.comments-link:link:hover, a.comments-link:visited:hover{ 
+  text-decoration:underline;
+}
+a.comments-link:active{ 
+  text-decoration:none;
+}
+a.comments-link:focus{ 
+  text-decoration:underline;
+}
+a.comments-link:visited{ 
+  text-decoration:none;
+}
+a.comments-link:link{ 
+  text-decoration:none;
+}
+
+a.footer:link, a.footer:visited, a.footer:hover, a.footer:active, a.footer:focus{
+	font-family: "DejaVu Sans", DejaVuSansBold_Import,"Sans Serif",Verdana; 
+	color: #5A5A5A;
+}
+
+a.footer:link:hover, a.footer:visited:hover{ 
+  text-decoration:underline;
+}
+a.footer:active{ 
+  text-decoration:none;
+}
+a.footer:focus{ 
+  text-decoration:underline;
+}
+a.footer:visited{ 
+  text-decoration:none;
+}
+a.footer:link{ 
+  text-decoration:none;
+}
+

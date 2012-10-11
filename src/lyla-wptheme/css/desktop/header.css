@@ -1,0 +1,162 @@
+/*
+ * ChiaraDeLiberato (Wordpress Theme)
+ *   Copyright (C) 2012  Chiara De Liberato
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *  
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * 
+ *	WebSite: http://www.chiaradeliberato.it/
+ * 	Source Code: http://source.chiaradeliberato.it/ 
+ * 
+*/
+
+#header{
+	background-image: url("./../../img/desktop/header.png"); 
+	background-repeat: repeat-x; 
+	height: 43px;
+	clear: both;
+	width: 100%;
+}
+
+#header_content{
+	width: 980px;
+	margin: 0 auto;	
+	margin-top: -45px;
+	margin-bottom: 30px;
+}
+
+#logo{ 
+	width: 480px;
+	height: 64px;
+	float: left;
+	margin-top: 5px;
+}
+
+.flags_it_enable {
+	margin-top: 7px;
+	display: block;
+	width: 30px;
+	height: 30px; 
+	background: url('./../../img/desktop/flag_enable-it.png') bottom;
+	float: right;
+}
+.flags_it_enable:hover {
+	background-position: 0 0;
+}
+
+.flags_it_disable {
+	margin-top: 7px;
+	display: block;
+	width: 30px;
+	height: 30px; 
+	background: url('./../../img/desktop/flag_disable-it.png') bottom;
+	float: right;
+}
+.flags_it_disable:hover {
+	background-position: 0 0;
+}
+
+
+.flags_en_enable {
+	margin-top: 7px;
+	display: block;
+	width: 30px;
+	height: 30px; 
+	background: url('./../../img/desktop/flag_enable-en.png') bottom;
+	float: right;
+}
+.flags_en_enable:hover {
+	background-position: 0 0;
+}
+
+.flags_en_disable {
+	margin-top: 7px;
+	display: block;
+	width: 30px;
+	height: 30px; 
+	background: url('./../../img/desktop/flag_disable-en.png') bottom;
+	float: right;
+}
+.flags_en_disable:hover {
+	background-position: 0 0;
+}
+
+#menu{
+	float: right;
+	width: 490px;
+}
+
+#social{
+	float: left;
+	width: 490px;
+	height: 46px;
+	margin-top: 3px;
+
+}
+
+.space-icon-first{
+	padding-left: 2px;
+}
+
+.space-icon{
+	padding-left: 20px;
+}
+
+.space-icon-first:hover {
+	margin-bottom: -3px;
+}
+
+.space-icon:hover {
+	margin-bottom: -3px;
+}
+
+.button_disable {
+	margin-top: -24px;
+	margin-right: 3px;
+	display: block;
+	width: 119px;
+	height: 38px; 
+	background: url('./../../img/desktop/button_on.png') bottom;
+	float: right;
+	font-family: "Trebuchet MS", Trebuchet_Import, "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+.button_disable:hover {
+	background-position: 0 0;
+}
+
+.button_enable {
+	margin-top: -24px;
+	margin-right: 3px;
+	display: block;
+	width: 119px;
+	height: 38px; 
+	background: url('./../../img/desktop/button_off.png') bottom;
+	float: right;
+	font-family: "Trebuchet MS", TrebuchetBold_Import, "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+.button_enable:hover {
+	background-position: 0 0;
+}
+
+.space-top{
+	padding-top: 4px;
+}
