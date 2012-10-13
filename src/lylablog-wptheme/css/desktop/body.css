@@ -1,0 +1,88 @@
+/*
+ * ChiaraDeLiberato (Wordpress Theme)
+ *   Copyright (C) 2012  Chiara De Liberato
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *  
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * 
+ *	WebSite: http://www.chiaradeliberato.it/
+ * 	Source Code: http://source.chiaradeliberato.it/ 
+ * 
+*/
+
+#container{
+	width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; 
+}
+
+#content{
+	width: 980px;
+	margin: 0 auto;
+	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 15px;
+	color: #000000;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.post-title{
+	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
+	font-size: 22px;
+	color: #000000;
+	text-align: justify;
+}
+
+.comments{
+	width: 980px;
+}
+
+#disqus_thread{
+	width: 980px;
+}
+
+
+.content_small{
+	font-size: 11px;
+}
+
+.content_tags{
+	font-family: "Verdana","Sans Serif","OpenSymbol"; 
+	font-size: 11px;
+}
+
+.author{
+	text-align: right;
+}
+
+.width{ 
+	width: 100%; 
+}
+
+.iframe{
+	width: 550px; 
+	height: 300px; 
+	overflow: hidden;
+	border: 0px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
