@@ -29,14 +29,19 @@
     margin: 0 auto -50px; 
 }
 
+#content-width{
+	width: 980px;
+	margin: 0 auto; 
+}
+
 #content{
 	width: 980px;
-	margin: 0 auto;
 	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
 	font-size: 15px;
 	color: #000000;
 	text-align: justify;
 	padding-top: 10px;
+	float: left;
 }
 
 .post-title{

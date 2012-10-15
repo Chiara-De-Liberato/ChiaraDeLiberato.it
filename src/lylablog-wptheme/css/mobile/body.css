@@ -29,9 +29,13 @@
     margin: 0 auto -50px; 
 }
 
-#content{
+#content-width{
 	width: 97%;
-	margin: 0 auto;
+	margin: 0 auto; 
+}
+
+#content{
+	float: left;
 	font-family: "DejaVu Sans", DejaVuSans_Import,"Sans Serif",Verdana; 
 	font-size: 15px;
 	color: #000000;
