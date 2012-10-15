@@ -22,9 +22,8 @@
  * 
 */
 ?>
-
+<div class="footer-push"></div>
 </div>
-	
 	<div id="footer">
 		<div id="footer_credits">
 			<div class="left"><?php echo $lang5; ?> </div>

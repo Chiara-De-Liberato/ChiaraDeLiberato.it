@@ -66,6 +66,9 @@
 	<!--[if lt IE 7.]>
 	<script defer type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/pngfix.js"></script>
 	<![endif]-->
+	<?php
+		wp_head();
+	?>
 </head>
 
 <body>
